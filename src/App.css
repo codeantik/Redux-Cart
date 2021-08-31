@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* box-sizing: border-box; */
+    font-family: 'Montserrat', sans-serif;
+    transition: all 0.3s;
+    /* height: 100vh; */
+}
+
+.leftArrowBox::after, .leftArrowBox::before
+ {
+  content:''; 
+	border: solid transparent;
+	height: 0;	
+  position: absolute;
+}
+.leftArrowBox:before{
+  border-width: 1rem;
+	border-right-color: black;
+	top: 0;
+  right:99.5%;
+}
+.leftArrowBox:after{
+  border-width: 0.9rem;
+	border-right-color:rgb(74, 85, 104);
+	top: 2.5px; 
+  right:99%;
+}
